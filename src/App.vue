@@ -1,11 +1,11 @@
 <template>
-   <vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="getData"></vue-waterfall-easy>
+   <vue-waterfall-easy :imgsArr="imgsArr" class="container" @scrollReachBottom="getData"></vue-waterfall-easy>
 </template>
 
 <script>
-  import axios from 'axios'
-  import vueWaterfallEasy from 'vue-waterfall-easy'
 
+  import vueWaterfallEasy from 'vue-waterfall-easy'
+  import axios from 'axios'
   export default {
   name: 'app',
   data() {
@@ -32,3 +32,12 @@
   }
 }
 </script>
+<style>
+.container {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+</style>
+
